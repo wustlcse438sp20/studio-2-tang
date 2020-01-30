@@ -21,5 +21,12 @@ class DepositFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_deposit, container, false)
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        switch_button.setOnClickListener {
+            val fragment = WithdrawFragment()
+        }
+    }
 
 }
